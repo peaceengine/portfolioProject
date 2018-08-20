@@ -1,5 +1,8 @@
   <!doctype html>
   <html lang="en">
+
+  {% load static %}
+
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,7 +10,7 @@
       <meta name="author" content="">
       <link rel="icon" href="../../../../favicon.ico">
 
-      <title>Album example for Bootstrap</title>
+      <title>Wicked Problem Games</title>
 
       <!-- Bootstrap core CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -18,31 +21,34 @@
 
       <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Wicked Problem Games</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Wicked Problem Games</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#">Philosophy</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
+          <a class="nav-item nav-link" href="{% static 'presentation.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="https://www.facebook.com/wickedproblemgames">Facebook</a>
+          <a class="nav-item nav-link" href="{% url 'allBlogs' %}">Blog</a>
         </div>
       </div>
-    </nav>
+      </nav>
       </header>
 
       <main role="main">
 
         <section class="jumbotron text-center">
           <div class="container">
-            <h1 class="jumbotron-heading">YOU solve humanity's biggest challenges</h1>
-            <p class="lead text-muted">We transform and inspire individuals through play to understand and help solve the world's biggest problems. We make fun, engaging & realistic simulation games about the biggest challenges to humanity, daring players to find the solutions</p>
+            <h1 class="jumbotron-heading">We transform and inspire individuals through play to become AWESOME solvers of humanity's toughest challenges</h1>
+            <p class="lead text-muted">PLAYERS! Our video games let YOU be the policymaker. Watch the impact of your choices. Release your creativity to find solutions to tough real-world problems.
+              ORGANISATIONS! We help you communicate your problem and solution to policy makers and stakeholders better.
             <p>
-              <a href="#" class="btn btn-primary my-2">Peace Engine</a>
-              <a href="#" class="btn btn-secondary my-2">Find out more</a>
-              <a href="#" class="btn btn-secondary my-3">Email me</a>
+              <a href="#" class="btn btn-primary my-2">The Peace Engine</a>
+              <a href="#" class="btn btn-secondary my-2">Gaming the Global Challenges/a>
+              <a href="#" class="btn btn-secondary my-3">Get in touch</a>
             </p>
+            <img src = "{% static 'Alicia VIkander nude2.png' %}" />
           </div>
         </section>
 
